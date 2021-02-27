@@ -1,3 +1,4 @@
+var port = process.env.PORT || 3000;
 const express = require('express');
 const axios = require('axios');
 
@@ -18,4 +19,4 @@ app.get('/ip/:ip/country', async function (req, res) {
     });
 })
 
-app.listen(3000, () => console.log('Up and running!'));
+app.listen(port, () => console.log('Up and running!'));
